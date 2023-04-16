@@ -176,8 +176,6 @@ region_count
 
 """Distribusi peluang tagihan tertinggi berada pada region southeast sebesar 0.2720 yang mana memiliki jumlah customer claim tertinggi juga."""
 
-#insuran.groupby([ 'region'])['charges'].agg(['count','mean','max']).sort_values('mean', ascending=False)
-
 sns.boxplot(x="region", y="charges", data=insuran, palette="Set3")
 plt.title('Distribusi Peluang Besar Tagihan di Tiap-tiap Region')
 plt.xlabel('Region')
